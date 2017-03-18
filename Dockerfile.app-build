@@ -1,0 +1,7 @@
+From ubuntu
+
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install /tmp/requirements.txt
+
+COPY dev-requirements.txt /tmp/dev-requirements.txt
+RUN pip install /tmp/dev-requirements.txt
