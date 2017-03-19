@@ -3,9 +3,9 @@ import setuptools
 
 
 setuptools.setup(
-    name='app',
+    name='skipper_example',
     version='1.0.0',
     author='Adir Gabai',
     author_email='adirgabai@gmail.com',
-    packages=['app', ],
+    packages=['skipper_example'],
 )
