@@ -1,7 +1,7 @@
-From ubuntu
+FROM python
 
 COPY requirements.txt /tmp/requirements.txt
-RUN pip install /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 COPY dev-requirements.txt /tmp/dev-requirements.txt
-RUN pip install /tmp/dev-requirements.txt
+RUN pip install -r /tmp/dev-requirements.txt
