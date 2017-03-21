@@ -1,0 +1,11 @@
+FROM python:2.7
+
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+COPY dist/my-flask-app-1.0.0.tar.gz /tmp/my-flask-app-1.0.0.tar.gz
+RUN pip install /tmp/my-flask-app-1.0.0.tar.gz
+
+ENV FLASK_APP=my_flask_app.main
+
+ENTRYPOINT flask run --host=0.0.0.0
