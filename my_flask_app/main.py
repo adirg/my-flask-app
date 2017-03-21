@@ -5,8 +5,8 @@ app = Flask(__name__)   # pylint: disable=invalid-name
 
 
 @app.route("/")
-def hello():
-    return "Hello World!"
+def root():
+    return "Happy Birthday Docker!"
 
 
 if __name__ == "__main__":
